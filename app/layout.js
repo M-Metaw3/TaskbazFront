@@ -16,9 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+<link rel="shortcut icon" href="Frame 39313.png" />
+
       <body className={inter.className}>
       <Providers>
-        {/* <Navbar/> */}
+        <Navbar/>
         
         {children}
         

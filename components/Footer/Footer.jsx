@@ -7,6 +7,7 @@ export default function Footer() {
 
 
 
+{/* <div className="flex flex-col pt-12 mt-20 w-full bg-slate-950 max-md:mt-10 max-md:max-w-full"> */}
 
 <div className="flex flex-col justify-center">
 <div className="flex flex-col pt-12 w-full bg-slate-950 max-md:max-w-full">
