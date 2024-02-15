@@ -9,7 +9,7 @@ export default function Footer() {
 
 {/* <div className="flex flex-col pt-12 mt-20 w-full bg-slate-950 max-md:mt-10 max-md:max-w-full"> */}
 
-<div className="flex flex-col justify-center">
+<div className="flex flex-col justify-center mt-20">
 <div className="flex flex-col pt-12 w-full bg-slate-950 max-md:max-w-full">
   <div className="self-center mt-1 w-full max-w-[1479px] max-md:max-w-full">
     <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">

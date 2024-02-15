@@ -9,12 +9,12 @@ import React from 'react';
 
 export default  function Homesection2  () {
   return (
-    <Box border={"1px solid red"}  className="flex flex-col text-base font-semibold capitalize border-[1px solid red] text-slate-600">
+    <Box   className="flex flex-col text-base font-semibold capitalize  text-slate-600">
     <div className="self-center text-4xl leading-10 text-center text-stone-950 max-md:max-w-full">
       Explore the latest <br />
       categories of our services{" "}
     </div>
-    <Box  border={"1px solid red"}  className="flex gap-2.5 justify-between px-5 mt-9 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+    <Box    className="flex gap-2.5 justify-between px-5 mt-9 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
       <div className="flex flex-col flex-1 justify-center">
         <div className="flex gap-5 justify-between px-5 py-4 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-4 justify-between">

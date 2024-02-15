@@ -1,6 +1,7 @@
 
 
 import { Box, Heading, Text, Stack, Input, Flex, Button } from '@chakra-ui/react';
+import Link from 'next/link';
 
 
 
@@ -192,6 +193,7 @@ export default  function Categoryname () {
         <div className="px-5 mt-6 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+            <Link href={"/servicies/1"}>
               <div className="flex flex-col grow justify-center max-md:mt-10">
                 <div className="flex flex-col pb-5 bg-white rounded-2xl shadow-lg">
                   <div className="flex overflow-hidden relative flex-col items-end pt-3.5 pr-2.5 pb-12 pl-16 w-full text-lg leading-7 text-center text-yellow-700 capitalize whitespace-nowrap aspect-[1.22] max-md:pl-5">
@@ -249,7 +251,9 @@ export default  function Categoryname () {
                   </div>
                 </div>
               </div>
+            </Link >
             </div>{" "}
+
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow justify-center max-md:mt-10">
                 <div className="flex flex-col pb-5 bg-white rounded-2xl shadow-lg">

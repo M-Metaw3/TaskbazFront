@@ -7,7 +7,7 @@ export default function Homesection4OurClientsReviws() {
 
 
 
-<div className="flex flex-col justify-center px-0.5">
+<div className="flex flex-col justify-center ">
   <div className="flex flex-col px-5 py-12 bg-neutral-100 max-md:max-w-full">
     <div className="self-center mt-14 text-4xl text-center capitalize whitespace-nowrap leading-[48.62px] text-stone-950 max-md:mt-10">
       Our clients reviews{" "}

@@ -2,6 +2,7 @@
 
 
 import { Box, Heading, Text, Stack, Input, Flex, Button } from '@chakra-ui/react';
+import Link from 'next/link';
 
 
 
@@ -35,6 +36,7 @@ export default  function Categorysections  () {
     <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow justify-center max-md:mt-10">
         <div className="flex flex-col justify-center bg-white rounded-2xl shadow-lg">
+          <Link href={"/categoriessection/1"}>
           <div className="flex justify-center items-center px-16 py-12 bg-white rounded-2xl shadow-lg max-md:px-5">
             <div className="flex flex-col justify-center mb-6 max-w-full w-[165px]">
               <div className="flex overflow-hidden relative flex-col justify-center items-center self-center pr-4 w-full aspect-[1.11]">
@@ -54,12 +56,15 @@ export default  function Categorysections  () {
               </div>
             </div>
           </div>
+        </Link>
         </div>
       </div>
     </div>{" "}
     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow justify-center max-md:mt-10">
         <div className="flex flex-col justify-center bg-white rounded-2xl shadow-lg">
+        <Link href={"/categoriessection/1"}>
+
           <div className="flex justify-center items-center px-16 py-12 bg-white rounded-2xl shadow-lg max-md:px-5">
             <div className="flex flex-col justify-center px-2.5 mb-6 max-w-full w-[165px]">
               <div className="flex overflow-hidden relative flex-col justify-center items-center self-center w-full aspect-square">
@@ -79,6 +84,8 @@ export default  function Categorysections  () {
               </div>
             </div>
           </div>
+          </Link>
+
         </div>
       </div>
     </div>{" "}
@@ -134,6 +141,8 @@ export default  function Categorysections  () {
   <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
     <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow justify-center text-lg leading-5 text-center capitalize whitespace-nowrap text-stone-950 max-md:mt-10">
+      <Link href={"/categoriessection/1"}>
+
         <div className="flex justify-center items-center px-16 py-12 bg-white rounded-2xl shadow-lg max-md:px-5">
           <div className="flex flex-col justify-center px-2.5 mb-6 max-w-full w-[165px]">
             <img
@@ -144,6 +153,8 @@ export default  function Categorysections  () {
             <div className="mt-4">Salon Services</div>
           </div>
         </div>
+        </Link >
+
       </div>
     </div>{" "}
     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
@@ -172,6 +183,8 @@ export default  function Categorysections  () {
     </div>{" "}
     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow justify-center text-lg leading-5 text-center capitalize whitespace-nowrap text-stone-950 max-md:mt-10">
+      <Link href={"/categoriessection/1"}>
+
         <div className="flex justify-center items-center px-16 py-12 bg-white rounded-2xl shadow-lg max-md:px-5">
           <div className="flex flex-col justify-center px-2 mb-6 max-w-full w-[165px]">
             <img
@@ -182,6 +195,7 @@ export default  function Categorysections  () {
             <div className="mt-4">General Services </div>
           </div>
         </div>
+        </Link>
       </div>
     </div>
   </div>

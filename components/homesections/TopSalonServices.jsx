@@ -7,8 +7,8 @@ export default function TopSalonServices() {
 
 
 
-<div className="flex flex-col">
-  <div className="w-full text-3xl font-semibold leading-5 text-center capitalize text-stone-950 max-md:max-w-full">
+<div className="flex flex-col my-10">
+  <div className="w-full text-3xl font-semibold leading-5 my-10 text-center capitalize text-stone-950 max-md:max-w-full">
     Top Salon Services{" "}
   </div>
   <div className="flex gap-5 justify-between px-5 py-4 mt-14 max-w-full text-base font-semibold capitalize whitespace-nowrap bg-white rounded-xl shadow-sm text-slate-600 w-[391px] max-md:pl-5 max-md:mt-10">

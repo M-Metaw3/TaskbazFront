@@ -12,7 +12,7 @@ export default  function Homesection3Topservices  () {
   
 
 
-    <Box border={'1px solid red'} p={"20px"} className="flex flex-col ">
+    <Box  p={"20px"} className="flex flex-col ">
     <div className="w-full text-3xl font-semibold leading-5 text-center capitalize text-stone-950 max-md:max-w-full">
       Top Services
     </div>

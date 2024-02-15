@@ -10,8 +10,8 @@ import React from 'react';
 export default  function Mobilesection  () {
   return (
 
-<div>
-<div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+<div className="my-10">
+<div className="flex gap-5 my-10 max-md:flex-col max-md:gap-0 max-md:">
   <div className="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
     <div className="flex flex-col grow items-end px-16 pt-12 w-full bg-violet-600 rounded-[376.176px_376.176px_188.088px_0px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <img

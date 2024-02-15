@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider,Box } from '@chakra-ui/react'
 import { Providers } from './providers'
 import  Footer from "@/components/Footer/Footer";
 import  Navbar from "@/components/Navbar/Navbar";
@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
       <Providers>
+        <Box w={"98%"}>
         <Navbar/>
+        </Box>
         
         {children}
         

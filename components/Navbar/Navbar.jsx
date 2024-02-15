@@ -1,34 +1,52 @@
 
-
+"use client"
 
 import { Box, Heading, Text, Stack, Input, Flex, Button } from '@chakra-ui/react';
 
 
 
+
+
+import { usePathname } from 'next/navigation'
+import Link from 'next/link';
+
 import React from 'react';
 
+
+
+
+
+
 export default  function Navbar  () {
+  const pathname = usePathname()
+  // const router = useRouter();
+
+  const isActive = (path) => {
+    console.log(path,pathname)
+    return pathname === path;
+  };
   return (
 
 
-<div className="flex flex-col justify-center sticky top-0 right-0 z-20 ">
+ <div className="flex flex-col justify-center sticky top-0 right-0 z-20 "> 
 <div className="pr-7 w-full bg-white bg-opacity-50  shadow-sm max-md:pr-5 max-md:max-w-full">
   <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
     <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
       <div className="flex grow gap-5 justify-between items-center text-base leading-6 capitalize text-gray-950 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-        <a href="#" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+        <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/18bac309c301db4b6398c55bf181ba6ba3a58be85b910ed323518266187a3b7c?"
             className="self-stretch max-w-full aspect-[1.27] fill-white w-[145px]"
             alt="Logo"
           />
-        </a>
-        <a href="#" className="flex-auto self-stretch my-auto text-fuchsia-800">Home</a>
-        <a href="#" className="flex-auto self-stretch my-auto">My Bookings</a>
-        <a href="#" className="flex-auto self-stretch my-auto">Category's</a>
-        <a href="#" className="flex-auto self-stretch my-auto">Contact us</a>
-        <a href="#" className="grow self-stretch my-auto whitespace-nowrap">About us</a>
+        </Link>
+        <Link href="/"className={`flex-auto self-stretch my-auto ${isActive('/') && 'text-fuchsia-800'}`}>Home</Link>
+        <Link href="/career"className={`flex-auto self-stretch my-auto ${isActive('/career') && 'text-fuchsia-800'}`}>Career</Link>
+        <Link href="/mybooking" className={`flex-auto self-stretch my-auto ${isActive('/mybooking') && 'text-fuchsia-800'}`}>My Bookings</Link>
+        <Link href="/categoriessection" className={`flex-auto self-stretch my-auto ${isActive('/categoriessection') && 'text-fuchsia-800'}`}>Category's</Link>
+        <Link href="/contact" className={`flex-auto self-stretch my-auto ${isActive('/contact') && 'text-fuchsia-800'}`}>Contact us</Link>
+        <Link href="/aboutus" className={`flex-auto self-stretch my-auto ${isActive('/aboutus') && 'text-fuchsia-800'}`}>About us</Link>
       </div>
     </div>
     <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
@@ -64,6 +82,8 @@ export default  function Navbar  () {
             alt="Language Icon"
           />
         </div>
+        <Link href="/myprofile">
+          
         <div className="flex gap-2 justify-between">
           <img
             loading="lazy"
@@ -81,9 +101,10 @@ export default  function Navbar  () {
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/f28740ab97823d9cfa4443b9ea34dd900aa63f7a15b8e5c6ed87d4483517d347?"
               className="my-auto w-4 aspect-[2] stroke-[1.5px] stroke-zinc-900"
               alt="Notification Icon"
-            />
+              />
           </div>
         </div>
+              </Link>
       </div>
     </div>
   </div>

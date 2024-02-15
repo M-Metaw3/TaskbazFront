@@ -12,8 +12,8 @@ export default function LatestOrder() {
 
 
 
-<div className="flex flex-col px-5">
-  <div className="w-full text-3xl font-semibold leading-5 text-center capitalize text-stone-950 max-md:max-w-full">
+<div className="flex flex-col px-5 my-10">
+  <div className="w-full text-3xl my-10 font-semibold leading-5 text-center capitalize text-stone-950 max-md:max-w-full">
     latest orders{" "}
   </div>
   <div className="mt-12 w-full max-md:mt-10 max-md:max-w-full">

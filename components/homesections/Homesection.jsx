@@ -40,7 +40,7 @@ export default function Homesection() {
 
                 <div className="flex gap-4 justify-between mt-3.5 text-base capitalize text-zinc-500 max-md:flex-wrap max-md:max-w-full">
                 <div className="flex flex-col flex-1 justify-center max-md:max-w-full">
-  <Box border={"1px solid red"} className="flex gap-5 justify-between py-5 pr-14 pl-4 bg-white rounded-2xl border border-solid border-[color:var(--Gray-4,#C3C3C3)] max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+  <Box  className="flex gap-5 justify-between py-5 pr-14 pl-4 bg-white rounded-2xl border border-solid border-[color:var(--Gray-4,#C3C3C3)] max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
     <Select
       size='lg'
       placeholder='-- Select the Category --'
@@ -53,7 +53,7 @@ export default function Homesection() {
   </Box>
 </div>
                   <div className="flex flex-col flex-1 justify-center max-md:max-w-full">
-  <Box border={"1px solid red"} className="flex gap-5 justify-between py-5 pr-14 pl-4 bg-white rounded-2xl border border-solid border-[color:var(--Gray-4,#C3C3C3)] max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
+  <Box  className="flex gap-5 justify-between py-5 pr-14 pl-4 bg-white rounded-2xl border border-solid border-[color:var(--Gray-4,#C3C3C3)] max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
     <Select
       size='lg'
       placeholder='-- Select the Category --'
