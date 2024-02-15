@@ -43,10 +43,10 @@ export default  function Navbar  () {
         </Link>
         <Link href="/"className={`flex-auto self-stretch my-auto ${isActive('/') && 'text-fuchsia-800'}`}>Home</Link>
         <Link href="/career"className={`flex-auto self-stretch my-auto ${isActive('/career') && 'text-fuchsia-800'}`}>Career</Link>
-        <Link href="/mybooking" className={`flex-auto self-stretch my-auto ${isActive('/mybooking') && 'text-fuchsia-800'}`}>My Bookings</Link>
+        <Link href="/mybooking" className={`flex-auto self-stretch my-auto ${isActive('/mybooking') && 'text-fuchsia-800'}`}>Bookings</Link>
         <Link href="/categoriessection" className={`flex-auto self-stretch my-auto ${isActive('/categoriessection') && 'text-fuchsia-800'}`}>Category's</Link>
-        <Link href="/contact" className={`flex-auto self-stretch my-auto ${isActive('/contact') && 'text-fuchsia-800'}`}>Contact us</Link>
-        <Link href="/aboutus" className={`flex-auto self-stretch my-auto ${isActive('/aboutus') && 'text-fuchsia-800'}`}>About us</Link>
+        <Link href="/contact" className={`flex-auto self-stretch my-auto ${isActive('/contact') && 'text-fuchsia-800'}`}>Contact</Link>
+        <Link href="/aboutus" className={`flex-auto self-stretch my-auto ${isActive('/aboutus') && 'text-fuchsia-800'}`}>About</Link>
       </div>
     </div>
     <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
