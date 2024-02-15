@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
       <Providers>
-        <Box w={"98%"}>
+        <Box w={"95%"}>
         <Navbar/>
         </Box>
         
