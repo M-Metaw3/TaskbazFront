@@ -3,6 +3,7 @@
 
 import { Box, Heading, Text, Stack, Input, Flex, Button } from '@chakra-ui/react';
 
+import Link from 'next/link';
 
 
 import React from 'react';
@@ -16,6 +17,8 @@ export default  function Homesection2  () {
     </div>
     <Box    className="flex gap-2.5 justify-between px-5 mt-9 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-5 py-4 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-4 justify-between">
             <img
@@ -31,8 +34,12 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between p-6 w-full bg-white rounded-xl shadow-sm max-md:pl-5">
           <div className="flex gap-4 justify-between">
             <img
@@ -48,9 +55,14 @@ export default  function Homesection2  () {
             className="self-start w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-5 py-4 w-full bg-white rounded-xl shadow-sm max-md:pl-5">
+          
           <div className="flex gap-3 justify-between">
             <img
               loading="lazy"
@@ -65,8 +77,12 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-5 py-3.5 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-3 justify-between">
             <img
@@ -82,10 +98,14 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
     </Box>
     <div className="flex gap-2.5 justify-between px-5 mt-3.5 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+        
         <div className="flex gap-5 justify-between px-5 py-4 w-full bg-white rounded-xl shadow-sm max-md:pl-5">
           <div className="flex gap-4 justify-between">
             <img
@@ -101,8 +121,12 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-4 py-3 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-3 justify-between">
             <img
@@ -118,8 +142,13 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
+
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-5 py-5 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-4 justify-between">
             <img
@@ -135,8 +164,12 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
+
       </div>
       <div className="flex flex-col flex-1 justify-center">
+      <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
+
         <div className="flex gap-5 justify-between px-5 py-4 w-full bg-white rounded-xl shadow-sm">
           <div className="flex gap-3 justify-between">
             <img
@@ -152,16 +185,22 @@ export default  function Homesection2  () {
             className="my-auto w-5 aspect-square"
           />
         </div>
+      </Link>
       </div>
+
     </div>
+
     <div className="flex gap-2.5 justify-center self-center px-20 py-5 mt-9 text-center text-white bg-fuchsia-800 rounded-xl max-md:px-5">
+    <Link href="/" className="flex grow  self-stretch my-auto font-bold ">
       <div className="my-auto">See all</div>
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/784a928d105ab0e526830684442170f6b5549967fff505ae21411fac72e703c0?"
         className="w-6 aspect-square"
       />
+    </Link>
     </div>
+
   </Box>
   );
 }

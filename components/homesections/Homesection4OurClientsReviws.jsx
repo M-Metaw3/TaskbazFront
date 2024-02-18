@@ -1,6 +1,8 @@
 import { Box ,Input } from '@chakra-ui/react'
 import { CircularProgress,InputLeftElement, CircularProgressLabel,InputGroup,Select,Button , Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
 import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Homesection4OurClientsReviws() {
   return (
 <>
@@ -16,7 +18,7 @@ export default function Homesection4OurClientsReviws() {
      */}
     <Box display={'flex'} >
 
-    <Box  className="mt-14 mb-5 max-md:mt-10 max-md:max-w-full">
+    <Link href={"/"}  className="mt-14 mb-5 max-md:mt-10 max-md:max-w-full">
       <Box className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
 
         <Box className="flex flex-col ml-5 w-[100%] max-md:ml-0 max-md:w-full">
@@ -67,7 +69,7 @@ export default function Homesection4OurClientsReviws() {
         
   
       </Box>
-    </Box>
+    </Link>
     <div className="mt-14 mb-5 max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
 

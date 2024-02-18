@@ -1,6 +1,8 @@
 import { Box ,Input } from '@chakra-ui/react'
 import { CircularProgress,InputLeftElement, CircularProgressLabel,InputGroup,Select,Button , Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
 import Image from 'next/image';
+import Link from 'next/link';
+
 export default function HomesectionTopProfessional() {
   return (
 <>
@@ -10,11 +12,11 @@ export default function HomesectionTopProfessional() {
 <div className="flex flex-col">
       <div className="flex gap-5 justify-between px-5 w-full text-black capitalize max-md:flex-wrap max-md:max-w-full">
         <div className="flex-auto text-3xl">Top professional </div>
-        <div className="self-start text-xl">See all</div>
+        <Link href={"/"} className="self-start text-xl">See all</Link>
       </div>
       <div className="px-5 mt-7 w-full max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-          <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+          <Link href={"/"} className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center capitalize max-md:mt-10 max-md:max-w-full">
               <div className="flex flex-col pb-4 bg-white rounded-2xl shadow-lg max-md:max-w-full">
                 <img
@@ -50,7 +52,7 @@ export default function HomesectionTopProfessional() {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center capitalize max-md:mt-10 max-md:max-w-full">
               <div className="flex flex-col pb-4 bg-white rounded-2xl shadow-lg max-md:max-w-full">

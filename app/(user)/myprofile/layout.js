@@ -103,7 +103,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>{" "}
           </Link>
-          <Link href={"/myprofile"}>
+          <Link href={"/myprofile/LatestOrders"}>
 
           <div className={`flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold rounded-xl border border-solid  border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700 max-md:px-5 ${isActive('/myprofile/LatestOrders') ? "bg-fuchsia-800 text-white":'bg-white text-neutral-700' }`}>
             <img
@@ -114,7 +114,7 @@ export default function RootLayout({ children }) {
             <div className="flex-auto my-auto">latest Orders</div>
           </div>{" "}
           </Link>
-          <Link href={"/myprofile"}>
+          <Link href={"/myprofile/TaskBuzzCredits"}>
 
           <div className={`flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold rounded-xl border border-solid  border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700 max-md:px-5 ${isActive('/myprofile/TaskBuzzCredits') ? "bg-fuchsia-800 text-white":'bg-white text-neutral-700' }`}>
             <img
@@ -128,7 +128,7 @@ export default function RootLayout({ children }) {
 
           </div>{" "}
           </Link>
-          <Link href={"/myprofile"}>
+          <Link href={"/myprofile/TrackOrder"}>
 
           <div className={`flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold rounded-xl border border-solid  border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700 max-md:px-5 ${isActive('/myprofile/TrackOrder') ? "bg-fuchsia-800 text-white":'bg-white text-neutral-700' }`}>
             <img

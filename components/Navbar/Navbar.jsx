@@ -32,7 +32,7 @@ export default  function Navbar  () {
 <div className="pr-7 w-full bg-white bg-opacity-50  shadow-sm max-md:pr-5 max-md:max-w-full">
   <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
     <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-      <div className="flex grow gap-5 justify-between items-center text-base leading-6 capitalize text-gray-950 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+      <Box  className="  flex grow gap-5 justify-between items-center text-base leading-6 capitalize text-gray-950 max-md:flex-wrap max-md:mt-10 max-md:max-w-full " >
         <Link href="/" className="flex grow  self-stretch my-auto font-bold text-fuchsia-800">
           <img
             loading="lazy"
@@ -47,7 +47,7 @@ export default  function Navbar  () {
         <Link href="/categoriessection" className={`flex-auto self-stretch my-auto ${isActive('/categoriessection') && 'text-fuchsia-800'}`}>Category's</Link>
         <Link href="/contact" className={`flex-auto self-stretch my-auto ${isActive('/contact') && 'text-fuchsia-800'}`}>Contact</Link>
         <Link href="/aboutus" className={`flex-auto self-stretch my-auto ${isActive('/aboutus') && 'text-fuchsia-800'}`}>About</Link>
-      </div>
+      </Box>
     </div>
     <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
       <div className="flex gap-5 self-stretch my-auto whitespace-nowrap max-md:flex-wrap max-md:mt-10 max-md:max-w-full">

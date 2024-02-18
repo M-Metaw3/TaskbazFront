@@ -22,13 +22,13 @@ export default function Homesection() {
               <div className="flex flex-col px-4 py-6 mt-8 bg-white rounded-2xl shadow-lg max-md:pr-5 max-md:max-w-full">
               <Box className="flex flex-col justify-center items-start py-6 pr-16 pl-5 text-xl leading-5 capitalize rounded-2xl shadow-sm bg-zinc-50 text-zinc-500 max-md:pr-5 max-md:max-w-full">
   <InputGroup w={'100%'}>
+
+    <InputLeftElement pointerEvents='none'>
     <img
       loading="lazy"
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/34bc5291cb3964784fdf8e77f79420683454a52334a3770f298007ab2a799bea?"
       className="w-7 aspect-[1.16]"
     />
-    <InputLeftElement pointerEvents='none'>
-      {/* You can add any icon or content here if needed */}
     </InputLeftElement>
     <Input
       placeholder='  Search For the service you want.....'
@@ -71,15 +71,32 @@ export default function Homesection() {
                     <div className="my-auto text-xl">from</div>
                     <div className="flex flex-col flex-1 justify-center text-base font-semibold leading-5">
                       <div className="justify-center items-start py-5 pr-4 pl-20 bg-white rounded-xl border-solid border-[1.3px] border-[color:var(--Gray-5,#E0E0E0)] max-md:pl-8">
-                        EGP
+                      <input
+      type="number"
+      id="currencyInput"
+      class="w-[90%] h-full border-none focus:outline-none"
+      placeholder="EGP"
+    />
+
                       </div>
                     </div>
                     <div className="my-auto text-xl text-stone-950">to</div>
                     <div className="flex flex-col flex-1 justify-center font-semibold">
-                      <div className="flex gap-2.5 justify-between px-10 py-5 bg-white rounded-xl border-solid border-[1.3px] border-[color:var(--Gray-5,#E0E0E0)] max-md:px-5">
+                      {/* <div className="flex gap-2.5 justify-between px-10 py-5 bg-white rounded-xl border-solid border-[1.3px] border-[color:var(--Gray-5,#E0E0E0)] max-md:px-5">
                         
                         <div className="text-base leading-5">EGP</div>
+                      </div> */}
+                        <div className="justify-center items-start py-5 pr-4 pl-20 bg-white rounded-xl border-solid border-[1.3px] border-[color:var(--Gray-5,#E0E0E0)] max-md:pl-8">
+                      <input
+      type="number"
+      id="currencyInput"
+      class="w-[80%] h-full border-none focus:outline-none"
+      placeholder="EGP"
+    />
+
                       </div>
+
+
                     </div>
 
 
@@ -149,10 +166,10 @@ export default function Homesection() {
                   className="grow w-full aspect-[0.83] max-md:mt-10 max-md:max-w-full"
              // path from the public directory
 
-        src="/Group 26086731.png" // path from the public directory
+        src="/Group 26086731.png" 
         alt="Example Image"
-        width={500} // specify the width
-        height={300} // specify the height
+        width={500} 
+        height={300} 
       />
           </div>
         </div>
