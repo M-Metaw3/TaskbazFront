@@ -50,7 +50,7 @@ export default function Home() {
       <div className="mt-8 ml-4 text-sm font-medium leading-5 text-zinc-800 max-md:ml-2.5">
         Date of Visit
       </div>
-
+{/* //////////// */}
       <div
       htmlFor="fileInput" className="flex gap-5 justify-between px-5 py-3.5 mt-3 ml-4 max-w-full text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--G-Soft,#D2D2D2)] text-zinc-800 w-full max-md:ml-2.5">
         <div className="flex-auto self-start mt-3">Wednesday 15 Sep 2023</div>
