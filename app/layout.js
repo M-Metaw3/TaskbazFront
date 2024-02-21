@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 {/* <link rel="shortcut icon" href="/Frame 39313.png" /> */}
 <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/18bac309c301db4b6398c55bf181ba6ba3a58be85b910ed323518266187a3b7c?" type="image/png" sizes="32x32" />
-      <body style={{padding:"20px"}} className={inter.className}>
+      <body  className={inter.className}>
       <Providers>
         
         <Navbar/>

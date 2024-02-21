@@ -10,7 +10,7 @@ import { Box, Heading, Text, Stack, Input, Flex, Button } from '@chakra-ui/react
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
 
-import React from 'react';
+import React,{useState} from 'react';
 
 
 
@@ -20,7 +20,8 @@ import React from 'react';
 export default  function Navbar  () {
   const pathname = usePathname()
   // const router = useRouter();
-
+  const [toggle, settoggle] = useState(false);
+  const [toggle2, settoggle2] = useState(false);
   const isActive = (path) => {
     console.log(path,pathname)
     return pathname === path;
@@ -67,12 +68,79 @@ export default  function Navbar  () {
             </div>
           </div>
         </div>
+        <div onClick={()=>settoggle((pre)=>!pre)}>
+
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/9339a37db7cfe3629ebce54a663e6f76eee38c71d275668a6de76de8b6d3d0f4?"
           className="my-auto w-14 aspect-square"
           alt="Profile Icon"
         />
+        </div>
+                      
+        {  toggle &&   <Box position={'absolute'} right={"15%"}  z-Index={"999"} top={"100%"} className="flex flex-col px-2.5 py-3.5 font-medium capitalize bg-white rounded-2xl shadow-lg max-w-80px">
+      <div className="flex gap-5 justify-between">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e532e9f8ecb664a0c585eabc3382b581643dc40506d3d14f8b5229d7943de9d?"
+          className="my-auto aspect-square w-[73px]"
+        />
+        <div className="flex flex-col flex-1">
+          <div className="text-lg leading-7 text-stone-950">
+            your order NO. #6487393 has been shipped successfully
+          </div>
+          <div className="flex gap-1 self-start mt-2 text-base leading-4 whitespace-nowrap text-zinc-500">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/35da571dd80d9b4eda13f3883c355f3f08e1c3a306f23d4a76b8fbb36637b53b?"
+              className="aspect-square w-[18px]"
+            />
+            <div className="grow">1 day</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-5 justify-between mt-5">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e532e9f8ecb664a0c585eabc3382b581643dc40506d3d14f8b5229d7943de9d?"
+          className="my-auto aspect-square w-[73px]"
+        />
+        <div className="flex flex-col flex-1">
+          <div className="text-lg leading-7 text-stone-950">
+            your order NO. #6487393 has been shipped successfully
+          </div>
+          <div className="flex gap-1 self-start mt-2 text-base leading-4 whitespace-nowrap text-zinc-500">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/35da571dd80d9b4eda13f3883c355f3f08e1c3a306f23d4a76b8fbb36637b53b?"
+              className="aspect-square w-[18px]"
+            />
+            <div className="grow">1 day</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-5 justify-between mt-5">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/1df73e266804a16ff442a322980b90c2acc4c789f0b58770d6d048b4c4cb726c?"
+          className="my-auto aspect-square w-[73px]"
+        />
+        <div className="flex flex-col flex-1">
+          <Box wordBreak={"break-word"} flexWrap={"wrap"}  className="text-lg leading-7 break-words text-neutral-400">
+            your order NO. #6487393 has been shipped successfully
+          </Box>
+          <div className="flex gap-1 self-start mt-2 text-base leading-4 whitespace-nowrap text-zinc-500">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/35da571dd80d9b4eda13f3883c355f3f08e1c3a306f23d4a76b8fbb36637b53b?"
+              className="aspect-square w-[18px]"
+            />
+            <div className="grow">1 day</div>
+          </div>
+        </div>
+      </div>
+    </Box>  }
+
         <div className="flex gap-0 self-start px-3 py-5 text-base capitalize text-gray-950">
           <div className="grow my-auto">EN</div>
           <img
@@ -84,7 +152,7 @@ export default  function Navbar  () {
         </div>
         <Link href="/myprofile">
           
-        <div className="flex gap-2 justify-between">
+        <div onClick={()=>settoggle2((pre)=>!pre)} className="flex gap-2 justify-between">
           <img
             loading="lazy"
             src="/Group 26086267.png"
@@ -102,8 +170,80 @@ export default  function Navbar  () {
               className="my-auto w-4 aspect-[2] stroke-[1.5px] stroke-zinc-900"
               alt="Notification Icon"
               />
+             
+          </div>
+          
+        </div>
+      {  toggle2 &&    <Box position={'absolute'} right={"0%"} top={"100%"}>
+        <div className="flex flex-col justify-center capitalize max-w-[366px]">
+      <div className="flex flex-col px-6 py-12 w-full bg-white rounded-2xl shadow-lg">
+        <div className="flex gap-5 justify-between">
+          <img
+            loading="lazy"
+            srcSet="..."
+            className="aspect-square w-[95px]"
+          />
+          <div className="flex flex-col flex-1 py-2.5 my-auto">
+            <div className="text-lg font-semibold leading-9 whitespace-nowrap text-gray-950">
+              Mohamed Ahmed Ali
+            </div>
+            <div className="mt-4 text-base leading-7 text-zinc-500">
+              +20 1113 400 683
+            </div>
           </div>
         </div>
+        <div className="shrink-0 mt-8 h-1.5 bg-neutral-100 rounded-[50px]" />
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/30f2dcd74d867a6a4c4beca9c6d73f7f1347f80977a54b80536cf6fb371fe1bd?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto my-auto">Personal Information</div>
+        </div>
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/32dad1d7e2502fceaddb3bfda9df3e6e86531613f01903d89a19fdcbdd368aca?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto self-start mt-2">Shipping Addresses</div>
+        </div>
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf83899269ab12c3b2cabdc674a66af3c1232a49c7178c7547e0662c01ee879c?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto self-start mt-2">Payment methods</div>
+        </div>
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/87543c269c5ee3dae8d6fbe8ad87733fb587a4ff079905b8770dd225a2d5c401?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto my-auto">latest Orders</div>
+        </div>
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/494d3d1f6f014ce76de9db32fcf848b07886f6daffd64af2a85c0aed871e1add?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto my-auto">Task buzz credits</div>
+        </div>
+        <div className="flex gap-2 justify-between px-6 py-5 mt-4 mb-1 text-base font-semibold bg-white rounded-xl border border-solid border-[color:var(--Gray-6,#F5F5F5)] text-neutral-700">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1fdb84b377d0240e731d723b6db4bd44bc9f8a95e6d6216d2897c2ae74f92c4?"
+            className="w-6 aspect-square"
+          />
+          <div className="flex-auto my-auto">Track Order </div>
+        </div>
+      </div>
+    </div>             
+                </Box>}
               </Link>
       </div>
     </div>
