@@ -29,7 +29,7 @@ export default  function Navbar  () {
 
 
  <div className="flex flex-col justify-center sticky top-0 right-0 z-20 "> 
-<div className="pr-7 w-full bg-white bg-opacity-50  shadow-sm max-md:pr-5 max-md:max-w-full">
+<div className="pr-7 w-full bg-white bg-opacity-85  shadow-sm max-md:pr-5 max-md:max-w-full">
   <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
     <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
       <Box  className="  flex grow gap-5 justify-between items-center text-base leading-6 capitalize text-gray-950 max-md:flex-wrap max-md:mt-10 max-md:max-w-full " >
